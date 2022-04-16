@@ -13,7 +13,7 @@ form.addEventListener('submit', e => {
 btn.addEventListener("click",(e)=>{
    e.preventDefault();
    let val = document.forms['myForm']['fname'].value;
-   if (val) {
+  
     let info;
    fetch('https://sheet.best/api/sheets/b4f5b4de-a672-4260-b0cd-7ef363b12f21')
    .then(response => response.json())
@@ -28,8 +28,6 @@ btn.addEventListener("click",(e)=>{
      
     })
   
-   } else {
-     alert("Fill the firstname")
-   } 
+   
     
 })

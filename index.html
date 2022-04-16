@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet Project</title>
+</head>
+<body>
+    <h1 class="heading">Google Sheet Project</h1>
+    <div class="main">
+    <div class="login-box">
+        <h2>Details</h2>
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbzq4oqaR8W1rFttHmvb_CA2j_KPQDKp0L2u6C6vFFclK_mxNjf5G2UVKG-8P5m523Na/exec" autocomplete="off" name="google-sheet">
+          <div class="user-box">
+            <input type="text" name="Firstname" value="" required="">
+            <label>First-Name</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="Lastname" value="" required="">
+            <label>Last-Name</label>
+          </div>
+          
+            <div class="submit-button">
+                <button type="submit">Save</button>
+            </div>
+
+        </form>
+      </div>
+      <div class="center">
+        <h1>Search Database</h1>
+        <form name="myForm">
+          <div class="inputbox">
+            <input type="text" name="fname">
+            <span>First-Name</span>
+          </div>
+          <div class="output">
+            <label id="label">Last-Name : </label>
+            <h3 id="display"></h3>
+          </div>
+          <div class="inputbox">
+            <input type="button" class="btn" value="Fetch">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"/>
+</body>
+</html>

@@ -1,4 +1,6 @@
-
+html{
+  height: 100%;
+}
 body {
     margin:0;
     padding:0;
@@ -148,10 +150,14 @@ body {
   }
   .center .inputbox [type="submit"] {
     width: 50%;
+    height: 50px;
     background: dodgerblue;
     color: #fff;
     border: #fff;
-    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 60px;
     margin-left: 100px;
   }
   .center .inputbox:hover [type="submit"] {
@@ -171,15 +177,7 @@ body {
     margin-left: 20px;
     margin-top: 0;
   }
-  .center .inputbox .btn {
-    margin-top: 60px;
-    border-radius: 50px;
-    width: 50%;
-  }
-  .center .inputbox .btn:hover{
-    color: black;
-    background-color: white;
-  }
+  
   
   
   

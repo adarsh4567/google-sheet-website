@@ -2,16 +2,17 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzq4oqaR8W1rFttHmvb_C
         const form = document.forms['google-sheet']
         const btn = document.querySelector(".btn")
         const display = document.querySelector("#display");
+        const second = document.querySelector(".form2");
         
 form.addEventListener('submit', e => {
-//   e.preventDefault()
+  e.preventDefault()
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => alert("Data has been stored"))
     .catch(error => console.error('Error!', error.message))
 })
 
-btn.addEventListener("click",(e)=>{
-//    e.preventDefault()
+second.addEventListener("submit",(e)=>{
+   e.preventDefault()
    let val = document.forms['myForm']['fname'].value;
    if (val) {
     let info;

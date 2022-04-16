@@ -148,7 +148,7 @@ body {
     transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
-  .center .inputbox [type="submit"] {
+  .center .inputbox [type="button"] {
     width: 50%;
     height: 50px;
     background: dodgerblue;
@@ -160,7 +160,7 @@ body {
     margin-top: 60px;
     margin-left: 100px;
   }
-  .center .inputbox:hover [type="submit"] {
+  .center .inputbox:hover [type="button"] {
     background: black;
     color: white;
   }

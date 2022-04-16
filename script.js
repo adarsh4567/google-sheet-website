@@ -15,7 +15,7 @@ btn.addEventListener("click",(e)=>{
    let val = document.forms['myForm']['fname'].value;
    if (val) {
     let info;
-   fetch('https://sheet.best/api/sheets/b4f5b4de-a672-4260-b0cd-7ef363b12f21',{method:'Get'})
+   fetch('https://sheet.best/api/sheets/b4f5b4de-a672-4260-b0cd-7ef363b12f21')
    .then(response => response.json())
    .then(data => {
     //  console.log(data);
